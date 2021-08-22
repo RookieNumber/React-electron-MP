@@ -1,8 +1,9 @@
 
 import React, {useState} from 'react';
 import * as FaIcons from 'react-icons/fa';
+import * as MdIcons from 'react-icons/Md';
 import { Link } from 'react-router-dom';
-import { SidebarData } from './SidebarData';
+import { SidebarData, MoreSideData } from './SidebarData';
 import { IconContext } from 'react-icons';
 import './Nav.global.css';
 
@@ -14,6 +15,10 @@ export default function Navbar() {
 
     const showSidebar = () => setSidebar(!sidebar);
 
+    const [sidemore, setSidemore] = useState(false);
+
+    const showMore = () => setSidemore(!sidemore);
+
 
     return (
         <>
@@ -24,7 +29,7 @@ export default function Navbar() {
                     </Link>
                 </div>
 
-             <IconContext.Provider value={{color: 'rgb(66, 66, 66)'}}>
+             <IconContext.Provider value={{color: 'white', size: "20px"}}>
                 <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                 <ul className='nav-menu-items'>
                     {SidebarData.map((item, index) => {
@@ -35,9 +40,25 @@ export default function Navbar() {
                                     <span>
                                         {item.title}
                                     </span>
+                                    <MdIcons.MdExpandMore className="arrow" onMouseEnter={showMore}/>
                                 </Link>
                             </li>
                          )
+                        })}
+                    </ul>
+                </nav>
+                <nav className={sidemore ? 'more-side active' : 'more-side'}>
+                      <ul className='more-side-menu'>
+                        {MoreSideData.map((item, index) => {
+                          return (
+                            <li key={index} className={item.cName}>
+                              {item.icon}
+                              <span>
+                                {item.title}
+                              </span>
+
+                            </li>
+                          )
                         })}
                     </ul>
                 </nav>

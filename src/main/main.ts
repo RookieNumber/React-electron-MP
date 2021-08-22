@@ -27,6 +27,8 @@ export default class AppUpdater {
 
 let mainWindow: BrowserWindow | null = null;
 
+
+
 ipcMain.on('ipc-example', async (event, arg) => {
   const msgTemplate = (pingPong: string) => `IPC test: ${pingPong}`;
   console.log(msgTemplate(arg));
@@ -75,6 +77,8 @@ const createWindow = async () => {
   };
 
   mainWindow = new BrowserWindow({
+    frame: false,
+    autoHideMenuBar: true,
     show: false,
     width: 1024,
     height: 728,

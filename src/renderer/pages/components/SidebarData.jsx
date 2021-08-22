@@ -3,6 +3,9 @@ import * as FaIcons from 'react-icons/fa';
 import * as CgIcons from 'react-icons/cg';
 import * as BsIcons from 'react-icons/bs';
 import * as AiIcons from 'react-icons/ai';
+import * as SiIcons from 'react-icons/si';
+import * as GoIcons from 'react-icons/go';
+
 
 export const SidebarData = [
     {
@@ -32,3 +35,20 @@ export const SidebarData = [
 
 ]
 
+export const MoreSideData = [
+  {
+    title: 'HUD',
+    icon: <BsIcons.BsAppIndicator/>,
+    cName: 'sub-menu'
+  },
+  {
+    title: 'Status',
+    icon: <SiIcons.SiActigraph/>,
+    cName: 'sub-menu'
+  },
+  {
+    title: 'Flight Data',
+    icon: <GoIcons.GoGraph/>,
+    cName: 'sub-menu'
+  }
+]

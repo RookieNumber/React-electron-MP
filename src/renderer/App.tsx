@@ -6,7 +6,7 @@ import Flight from './pages/Flight';
 import Mission from './pages/Mission';
 import Config from './pages/Config';
 import Docs from './pages/Docs';
-import Nav from './components/Nav';
+import Nav from './pages/components/Nav';
 
 export default function App() {
   return (

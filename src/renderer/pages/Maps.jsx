@@ -21,5 +21,5 @@ class Peta extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyCZ_vl-VKkgrPubwhDrO_kabij1st_W4Nw'
+    apiKey: 'AIzaSyBCsK181-_y0LC1Vn1TcvRAVjSONKUXIzk'
 })(Peta);
