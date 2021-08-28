@@ -1,21 +1,25 @@
 import React from 'react';
 import { MemoryRouter as Router, Switch, Route } from 'react-router-dom';
-import icon from '../../assets/icon.svg';
+
 import './App.global.css';
-import Flight from './pages/Flight';
-import Mission from './pages/Mission';
-import Config from './pages/Config';
+import HUD from './pages/HUD';
+import Data from './pages/Data';
+import Status from './pages/Status';
 import Docs from './pages/Docs';
-import Nav from './pages/components/Nav';
+import {Navbar} from './pages/components/Navigator';
+import  GoogleApiWrapper  from './pages/Maps';
+
 
 export default function App() {
   return (
     <Router>
-      <Nav />
+      <Navbar />
+      <GoogleApiWrapper />
+
       <Switch>
-        <Route path='/' exact component={Flight}/>
-        <Route path='/mission' component={Mission}/>
-        <Route path='/config' component={Config}/>
+        <Route path='/hud' exact component={HUD}/>
+        <Route path='/data' component={Data}/>
+        <Route path='/status' component={Status}/>
         <Route path='/docs' component={Docs}/>
       </Switch>
     </Router>

@@ -1,12 +1,12 @@
 import React from 'react'
 import './components/style/Background.global.css';
 
-function Docs() {
+function Data() {
     return (
-        <div className="docs">
-            <h1>Documentation and Guide</h1>
+        <div className="data">
+            <h1>yololehihu</h1>
         </div>
     );
 }
 
-export default Docs;
+export default Data;

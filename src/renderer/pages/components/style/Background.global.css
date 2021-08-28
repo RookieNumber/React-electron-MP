@@ -1,0 +1,64 @@
+.flight-hud {
+  width: 40vw;
+  height: 60vh;
+  background-color: rgb(26, 26, 27);
+  position: absolute;
+  top: 20vh;
+  left: 30vw;
+  z-index: -2;
+}
+
+.hud-list span {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-left: 100px;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.hud-list {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-right: 100px;
+  list-style: none;
+  height: 50px;
+  text-decoration: none;
+}
+
+
+
+.Status {
+  width: 60vw;
+  height: 60vh;
+  background-color: rgb(26, 26, 27);
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  z-index: -2;
+}
+
+.data {
+  width: 60vw;
+  height: 60vh;
+  background-color: rgb(26, 26, 27);
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  z-index: -2;
+}
+
+.docs {
+  width: 60vw;
+  height: 60vh;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 20vh;
+  left: 20vw;
+  z-index: -2;
+}
+
